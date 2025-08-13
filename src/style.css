@@ -1,3 +1,130 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Reset default styles for consistency */
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+
+   /* Global page styles */
+   body {
+     background-color: #a7b5c3; /* Light blue-gray background */
+     font-family: 'Arial', sans-serif;
+     color: #333;
+     line-height: 1.6;
+     padding: 20px;
+   }
+
+   /* Container for the entire app */
+   .app-container {
+     max-width: 800px;
+     margin: 0 auto;
+     background-color: #ffffff;
+     border-radius: 8px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+   }
+
+   /* Contact list styles */
+   .contact-list {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     margin-bottom: 20px;
+   }
+
+   .contact-item {
+     background-color: #e9ecef;
+     padding: 15px;
+     border-radius: 5px;
+     border: 1px solid #ddd;
+     cursor: pointer;
+     transition: background-color 0.2s;
+   }
+
+   .contact-item:hover {
+     background-color: #d1d5db;
+   }
+
+   /* Search bar */
+   .search-bar {
+     margin-bottom: 20px;
+   }
+
+   .search-bar input {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     font-size: 16px;
+   }
+
+   /* Contact details view */
+   .contact-details {
+     background-color: #f8f9fa;
+     padding: 20px;
+     border-radius: 5px;
+     margin-bottom: 20px;
+   }
+
+   .contact-details h2 {
+     margin-bottom: 10px;
+     color: #007bff;
+   }
+
+   /* Form styles (for add/edit contact) */
+   .contact-form {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     max-width: 500px;
+   }
+
+   .contact-form label {
+     font-weight: bold;
+   }
+
+   .contact-form input {
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     font-size: 16px;
+   }
+
+   /* Buttons */
+   .button {
+     background-color: #007bff;
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: 16px;
+     transition: background-color 0.2s;
+   }
+
+   .button:hover {
+     background-color: #0056b3;
+   }
+
+   .delete-button {
+     background-color: #dc3545;
+   }
+
+   .delete-button:hover {
+     background-color: #b02a37;
+   }
+
+   /* Responsive design */
+   @media (max-width: 600px) {
+     .app-container {
+       padding: 10px;
+     }
+
+     .contact-form input,
+     .button {
+       font-size: 14px;
+     }
+   }
